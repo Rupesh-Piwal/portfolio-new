@@ -1,21 +1,13 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+const bricolage_grotesque = Bricolage_Grotesque({
   subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-jetbrains-mono",
-  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Rupesh Piwal | Web/Browser Engineer",
+  title: "Rupesh Piwal",
   description:
     "I build interactive web apps using TypeScript, React, Next.js, and Tailwind CSS. Enthusiastic about creating seamless user experiences.",
   keywords: [
@@ -32,9 +24,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://rupeshpiwal.dev",
+    url: "https://rpiwal",
     siteName: "Rupesh Piwal Portfolio",
-    title: "Rupesh Piwal | Web/Browser Engineer",
+    title: "Rupesh Piwal",
     description:
       "I build interactive web apps using TypeScript, React, Next.js, and Tailwind CSS.",
     images: [
@@ -48,7 +40,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rupesh Piwal | Web/Browser Engineer",
+    title: "Rupesh Piwal",
     description:
       "I build interactive web apps using TypeScript, React, Next.js, and Tailwind CSS.",
     images: ["/og-image.png"],
@@ -67,9 +59,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
-      <body
-        className={`${inter.variable} ${jetbrainsMono.variable} antialiased`}
-      >
+      <body className={`${bricolage_grotesque.className} antialiased`}>
         {children}
       </body>
     </html>
