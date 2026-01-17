@@ -1,9 +1,9 @@
 import { Container } from "@/components/layout/container";
 import { HeroCard } from "@/components/hero/hero-card";
-import { ContributionGraph } from "@/components/github/contribution-graph";
 import { ExperienceList } from "@/components/experience/experience-list";
 import { ProjectGrid } from "@/components/projects/project-grid";
 import { Connect } from "@/components/footer/connect";
+import ContributionGraph from "@/components/github/ContributionGraph";
 
 export default function Home() {
   return (
