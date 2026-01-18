@@ -8,7 +8,7 @@ import { WordRotate } from "../ui/word-rotate";
 export function HeroCard() {
   return (
     <section className="lg:py-8 border border-red-300">
-      <div className="rounded-2xl border border-border bg-bg-secondary lg:p-6 pt-6 sm:p-8 border border-yellow-300">
+      <div className="rounded-2xl border border-border bg-bg-secondary lg:p-6 pt-6 sm:p-8">
         {/* Top section: Avatar + Info */}
         <div className="flex flex-row gap-6 border border-blue-300">
           {/* Avatar */}
@@ -34,7 +34,7 @@ export function HeroCard() {
 
             {/* Role */}
             <WordRotate
-              words={["Web Engineer", "Fullstack Engineer", "History Nerd"]}
+              words={["Browser Engineer", "Fullstack Engineer", "History Nerd"]}
             />
 
             {/* Location + Availability */}

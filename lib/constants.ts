@@ -9,26 +9,27 @@ export const siteConfig: SiteConfig = {
   avatar: "/images/Goat.jpg",
   available: true,
   availableText: "Available for Work",
-  resumeUrl: "/resume.pdf",
+  resumeUrl:
+    "https://drive.google.com/file/d/1x1NT4gVtED2Wn7CEyCkm7oZFc4CzdIC7/view?usp=sharing",
   socials: [
     {
       name: "GitHub",
-      url: "https://github.com/rupeshpiwal",
+      url: "https://github.com/Rupesh-Piwal",
       icon: "github",
     },
     {
       name: "LinkedIn",
-      url: "https://linkedin.com/in/rupeshpiwal",
+      url: "https://www.linkedin.com/in/rupesh-piwal21",
       icon: "linkedin",
     },
     {
       name: "Twitter",
-      url: "https://twitter.com/rupeshpiwal",
+      url: "https://x.com/rpmarch21",
       icon: "twitter",
     },
     {
       name: "Email",
-      url: "mailto:rupesh@example.com",
+      url: "mailto:rpmarch21@gmail.com",
       icon: "mail",
     },
   ],
