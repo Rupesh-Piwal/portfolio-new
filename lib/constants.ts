@@ -3,7 +3,7 @@ import type { SiteConfig } from "@/types";
 export const siteConfig: SiteConfig = {
   name: "Rupesh Piwal",
   role: "Web/Browser Engineer",
-  location: "Pune",
+  location: "CSN (Remote)",
   locationIcon: "map-pin",
   bio: "I build interactive web apps using TypeScript, React, Next.js, and Tailwind CSS. With a focus on UI design. Enthusiastic about creating seamless user experiences, driven by a keen eye for design.",
   avatar: "/images/Goat.jpg",

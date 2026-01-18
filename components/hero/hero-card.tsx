@@ -3,7 +3,7 @@ import { MapPin, FileText, Github, Linkedin, Mail, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AvailabilityBadge } from "./availability-badge";
 import { siteConfig } from "@/lib/constants";
-import { WordRotate } from "../ui/word-rotate";
+import { AnimatedTextSlider } from "@/components/animated-text-slider";
 
 export function HeroCard() {
   return (
@@ -13,7 +13,7 @@ export function HeroCard() {
         <div className="flex flex-row gap-6 border border-blue-300">
           {/* Avatar */}
           <div className="shrink-0">
-            <div className="h-20 w-20  overflow-hidden rounded-xl border border-border">
+            <div className="h-20 w-20 overflow-hidden rounded-xl border border-border">
               <Image
                 src={siteConfig.avatar}
                 alt={siteConfig.name}
@@ -26,15 +26,23 @@ export function HeroCard() {
           </div>
 
           {/* Info */}
-          <div className="flex flex-col">
+          <div className="flex flex-col border border-green-300 justify-center ">
             {/* Name */}
-            <h1 className="text-[20px] lg:text-2xl font-bold text-text-primary">
+            <h1 className="text-[20px] lg:text-3xl font-bold text-text-primary">
               {siteConfig.name}
             </h1>
 
             {/* Role */}
-            <WordRotate
+            {/* <WordRotate
               words={["Browser Engineer", "Fullstack Engineer", "History Nerd"]}
+            /> */}
+
+            <AnimatedTextSlider
+              texts={[
+                "Browser Engineer",
+                "Full-Stack Developer",
+                "Detail Oriented",
+              ]}
             />
 
             {/* Location + Availability */}

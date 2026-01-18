@@ -14,11 +14,11 @@ interface WordRotateProps {
 
 export function WordRotate({
   words,
-  duration = 2000,
+  duration = 3000,
   motionProps = {
-    initial: { opacity: 0, y: -50 },
-    animate: { opacity: 1, y: 0 },
-    exit: { opacity: 0, y: 50 },
+    initial: { opacity: 0.75, y: 10 },
+    animate: { opacity: 0.75, y: 0 },
+    exit: { opacity: 0.75, y: 0 },
     transition: { duration: 0.75, ease: "easeOut" },
   },
   className,
@@ -35,7 +35,7 @@ export function WordRotate({
   }, [words, duration]);
 
   return (
-    <div className="overflow-hidden py-2">
+    <div className="overflow-hidden py-2 text-slate-400">
       <AnimatePresence mode="wait">
         <motion.h1
           key={words[index]}
