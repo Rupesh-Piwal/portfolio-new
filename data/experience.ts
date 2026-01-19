@@ -11,7 +11,7 @@ export const experiences: Experience[] = [
     startDate: "2024-08",
     endDate: "2025-05",
     description:
-      "Building AI-powered machine learning tools and infrastructure.",
+      "Implemented real-time audio streaming.",
     details: [
       "Developed a React-based web application for real-time medical documentation, leveraging a gRPC and Protobuf backend for high-performance data exchange.",
       "Implemented real-time audio streaming using WebSockets and integrated the Web Speech API for speech-to-text transcription.",

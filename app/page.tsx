@@ -8,7 +8,7 @@ import ContributionGraph from "@/components/github/ContributionGraph";
 export default function Home() {
   return (
     <>
-      <main className=" mx-auto max-w-3xl min-h-screen pb-16 border border-red-300">
+      <main className=" mx-auto max-w-205 min-h-screen pb-16 bg-[#000000]">
         <Container>
           <HeroCard />
           <ContributionGraph />

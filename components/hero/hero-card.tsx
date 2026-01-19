@@ -7,10 +7,10 @@ import { AnimatedTextSlider } from "@/components/animated-text-slider";
 
 export function HeroCard() {
   return (
-    <section className="lg:py-8 border border-red-300">
+    <section className="lg:py-8">
       <div className="rounded-2xl border border-border bg-bg-secondary lg:p-6 pt-6 sm:p-8">
         {/* Top section: Avatar + Info */}
-        <div className="flex flex-row gap-6 border border-blue-300">
+        <div className="flex flex-row gap-6 ">
           {/* Avatar */}
           <div className="shrink-0">
             <div className="h-20 w-20 overflow-hidden rounded-xl border border-border">
@@ -26,7 +26,7 @@ export function HeroCard() {
           </div>
 
           {/* Info */}
-          <div className="flex flex-col border border-green-300 justify-center ">
+          <div className="flex flex-col justify-center ">
             {/* Name */}
             <h1 className="text-[20px] lg:text-3xl font-bold text-text-primary">
               {siteConfig.name}
@@ -63,7 +63,7 @@ export function HeroCard() {
         {/* Bio */}
         <p className="mt-6 text-text-secondary leading-relaxed">
           {/* {siteConfig.bio} */}I build interactive web apps using{" "}
-          <span className="bg-slate-950 bg-opacity-[70%] border-2 border-slate-700 border-dotted p-1">
+          <span className="bg-slate-950 bg-opacity-[70%] border-2 border-slate-700 border-dotted p-1 rounded">
             TypeScript
           </span>
           , React, Next.js, and Tailwind CSS. With a focus on UI design.

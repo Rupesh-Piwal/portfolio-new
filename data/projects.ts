@@ -5,8 +5,8 @@ export const projects: Project[] = [
     id: "1",
     name: "VidVault",
     description:
-      "Engineered a scalable video upload system with AWS S3 presigned URLs and multipart uploads, ensuring resumable and failure-safe uploads.Built resilient background jobs with BullMQ + Redis (idempotency, exponential backoff), offloaded heavy tasks to workers, and delivered a real-time dashboard with secure share links, previews, and instant alerts.",
-    image: "/images/vidvault.png",
+      "Built a reliable system to upload and process videos that handles failures smoothly and provides real-time updates, secure sharing, previews, and instant alerts.",
+    image: "/images/vidvault1.png",
     techStack: [
       "Nextjs",
       "AWS",
@@ -25,8 +25,8 @@ export const projects: Project[] = [
     id: "2",
     name: "Finsync",
     description:
-      "Built an AI-powered finance app with real-time tracking, smart budgeting, and dynamic dashboards.Used Gemini 1.5 Flash for 90%+ accurate receipt scanning and auto-logging of transactions.Automated alerts, reminders, and reports using Inngest to boost engagement and retention.Secured access with Arcjet rate limiting and bot protection for safe, scalable performance.",
-    image: "/images/finsync.png",
+      "Built a finance app that tracks spending in real time, scans receipts automatically, sends smart alerts and reports, and stays secure and reliable at scale.",
+    image: "/images/finsync1.png",
     techStack: ["Nextjs", "PostgreSQL", "Gemini AI", "Node.js", "Prisma"],
     liveUrl: "https://finsyncai.vercel.app/",
     githubUrl: "https://github.com/Rupesh-Piwal/finsync/blob/main/README.md",
@@ -36,8 +36,8 @@ export const projects: Project[] = [
     id: "3",
     name: "Ichofy",
     description:
-      "Architected a high-performance MERN web app for 1000+ users with optimized queries and Zustand state management. Built a WebSocket chat with sub-50ms latency. Developed an analytics dashboard using MongoDB Aggregation, automating reports and improving decision-making.",
-    image: "/images/ichofy.png",
+      "Built a fast and scalable web app for 1000+ users with real-time chat, smooth state management, and an analytics dashboard that helps make better decisions.",
+    image: "/images/ichofy1.png",
     techStack: ["Reactjs", "Zustand", "MongoDB", "Node.js", "Cloudinary"],
     liveUrl: "https://ichofy.onrender.com/",
     githubUrl: "https://github.com/Rupesh-Piwal/Ichofy/blob/main/Readme.md",
@@ -47,8 +47,8 @@ export const projects: Project[] = [
     id: "4",
     name: "Talent Hire",
     description:
-      "Developed Talent Hire, a scalable Job Board Platform using Next.js, PostgreSQL, Prisma ORM, and Clerk Auth for server-side rendering, efficient data handling, and secure user authentication, contributing to 80+ commits.",
-    image: "/images/talenthire.png",
+      "Built a scalable job board app with secure login, fast pages, and reliable data handling, contributing extensively to its development.",
+    image: "/images/talenthire1.png",
     techStack: ["Nextjs", "TypeScript", "PostgreSQL", "Node.js"],
     liveUrl: "https://talent-hire-xi.vercel.app/",
     githubUrl: "https://github.com/Rupesh-Piwal/TalentHire",
