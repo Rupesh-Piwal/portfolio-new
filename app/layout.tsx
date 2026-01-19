@@ -1,9 +1,16 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
 const bricolage_grotesque = Bricolage_Grotesque({
   subsets: ["latin"],
+});
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+  variable: '--font-space-grotesk'
 });
 
 export const metadata: Metadata = {
@@ -58,8 +65,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
-      <body className={`${bricolage_grotesque.className} antialiased`}>
+    <html lang="en" className="bg-[#000000]" suppressHydrationWarning>
+      <body className={`${bricolage_grotesque.className} ${spaceGrotesk.variable} antialiased`}>
         {children}
       </body>
     </html>

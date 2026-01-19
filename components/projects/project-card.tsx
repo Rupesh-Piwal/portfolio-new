@@ -9,7 +9,7 @@ interface ProjectCardProps {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="group rounded-xl border border-border bg-bg-secondary overflow-hidden transition-all hover:border-gray-medium hover:-translate-y-0.5">
+    <div className="group glass-card glass-card-hover glass-border-glow rounded-xl overflow-hidden">
       <div className="flex flex-col md:flex-row">
         {/* Image Section */}
         <div className="relative aspect-video md:aspect-auto md:w-[45%] overflow-hidden">

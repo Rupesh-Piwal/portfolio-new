@@ -5,31 +5,37 @@
 
 /* ===== CSS Variables - Dark Theme Portfolio ===== */
 :root {
-  /* Core Backgrounds */
-  --bg-primary: #0a0a0a;
-  --bg-secondary: #161616;
-  --bg-elevated: #1c1c1c;
+  /* Core Backgrounds - Pure Black */
+  --bg-primary: #000000;
+  --bg-secondary: rgba(255, 255, 255, 0.03);
+  --bg-elevated: rgba(255, 255, 255, 0.06);
 
-  /* UI Accents & Borders */
-  --border: oklch(0.922 0 0);
-  --gray-medium: #404040;
-  --gray-active: #737373;
+  /* Glass Effect */
+  --glass-bg: rgba(255, 255, 255, 0.02);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
 
-  /* Typography */
+  /* UI Accents & Borders - Warm Amber Tones */
+  --border: rgba(255, 255, 255, 0.1);
+  --gray-medium: #3d3d3d;
+  --gray-active: #5a5a5a;
+
+  /* Typography - Warm Tones from Palette */
   --text-primary: #ffffff;
-  --text-secondary: #a3a3a3;
-  --text-muted: #525252;
+  --text-secondary: #8C8C8C;
+  --text-muted: #8D8E8E;
+  --text-accent: #8D8E8E;
 
   /* Contribution Graph Levels */
-  --contrib-0: #161b22;
-  --contrib-1: #404040;
-  --contrib-2: #6e7681;
-  --contrib-3: #d1d5db;
-  --contrib-4: #ffffff;
+  --contrib-0: #1a1a1a;
+  --contrib-1: #2d2d2d;
+  --contrib-2: #4a4a4a;
+  --contrib-3: #8a8074;
+  --contrib-4: #e8dcc4;
 
   /* Status Colors */
-  --success: #22c55e;
-  --success-muted: #166534;
+  --success: #6b8e5e;
+  --success-muted: #3d5235;
 
   /* Fonts */
   --font-sans: var(--font-inter), system-ui, sans-serif;
@@ -128,12 +134,15 @@
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
   --animate-shiny-text: shiny-text 8s infinite;
+
   @keyframes shiny-text {
+
     0%,
     90%,
     100% {
       background-position: calc(-100% - var(--shiny-width)) 0;
     }
+
     30%,
     60% {
       background-position: calc(100% + var(--shiny-width)) 0;
@@ -151,11 +160,12 @@ html {
 }
 
 body {
-  background: var(--bg-primary);
+  background: #000000;
   color: var(--text-primary);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
 }
 
 /* ===== Typography ===== */
@@ -258,8 +268,43 @@ img {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-black text-foreground;
   }
 }
 
+/* ===== Glassmorphism Utilities ===== */
+.glass-card {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+
+
+.glass-border-glow {
+  position: relative;
+}
+
+.glass-border-glow::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg,
+      rgba(212, 168, 83, 0.15) 0%,
+      rgba(255, 255, 255, 0.05) 50%,
+      rgba(212, 168, 83, 0.1) 100%);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.glass-border-glow:hover::before {
+  opacity: 1;
+}

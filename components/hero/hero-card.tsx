@@ -8,7 +8,7 @@ import { AnimatedTextSlider } from "@/components/animated-text-slider";
 export function HeroCard() {
   return (
     <section className="lg:py-8">
-      <div className="rounded-2xl border border-border bg-bg-secondary lg:p-6 pt-6 sm:p-8">
+      <div className="glass-card glass-card-hover glass-border-glow rounded-2xl lg:p-6 pt-6 sm:p-8">
         {/* Top section: Avatar + Info */}
         <div className="flex flex-row gap-6 ">
           {/* Avatar */}
