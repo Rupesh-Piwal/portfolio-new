@@ -5,11 +5,19 @@ import ContributionsDisplay from "./GitHubContributions";
 const ContributionGraph = () => {
   return (
     <BackgroundImageTexture variant="debut-light" opacity={0.6}>
-      <div className="sm:px-12 px-0 mt-4 flex gap-3 item-center ">
-        <Github />
-        <h2 className="text-white font-(family-name:--font-space-grotesk) sm:text-xl leading-relaxed -tracking-[0.01em] mb-4 px-4 ">
-          GitHub Contributions <span className="">●</span> @RupeshPiwal
-        </h2>
+      <div className="sm:px-12 px-0 mt-4">
+        <div className="flex flex-row items-center mb-4 px-4 gap-2 ">
+          <Github />
+          <h2 className="text-white font-(family-name:--font-space-grotesk) sm:text-xl leading-relaxed -tracking-[0.01em] ">
+            GitHub Contributions <span className="">●</span>
+            <a
+              className="text-slate-700"
+              href="https://github.com/Rupesh-Piwal"
+            >
+              @RupeshPiwal
+            </a>
+          </h2>
+        </div>
         <div className="mb-4 sm:mb-6">
           <ContributionsDisplay
             username="Rupesh-Piwal"
