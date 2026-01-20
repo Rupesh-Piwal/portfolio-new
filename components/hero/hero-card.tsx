@@ -63,12 +63,11 @@ export function HeroCard() {
         {/* Bio */}
         <p className="mt-6 text-text-secondary leading-relaxed">
           {/* {siteConfig.bio} */}I build interactive web apps using{" "}
-          <span className="bg-slate-950 bg-opacity-[70%] border-2 border-slate-700 border-dotted p-1 rounded">
-            TypeScript
-          </span>
-          , React, Next.js, and Tailwind CSS. With a focus on UI design.
-          Enthusiastic about creating seamless user experiences, driven by a
-          keen eye for design.
+          <span className="text-white font-mono font-semibold">TypeScript</span>
+          , <span className="text-white font-mono font-semibold">React</span>,{" "}
+          <span className="text-white font-mono font-semibold">Nextjs</span>,
+          and Tailwind CSS. With a focus on UI design. Enthusiastic about
+          creating seamless user experiences, driven by a keen eye for design.
         </p>
 
         {/* CTA Buttons */}

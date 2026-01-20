@@ -4,7 +4,7 @@ import ContributionsDisplay from "./GitHubContributions";
 
 const ContributionGraph = () => {
   return (
-    <BackgroundImageTexture variant="debut-light" opacity={0.6}>
+    
       <div className="sm:px-12 px-0 mt-4">
         <div className="flex flex-row items-center mb-4 px-4 gap-2 ">
           <Github />
@@ -26,7 +26,7 @@ const ContributionGraph = () => {
           />
         </div>
       </div>
-    </BackgroundImageTexture>
+    
   );
 };
 
