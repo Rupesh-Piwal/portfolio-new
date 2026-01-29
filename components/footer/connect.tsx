@@ -83,10 +83,6 @@ export function Connect() {
                 className="h-full w-full object-cover"
               />
             </div>
-            {/* Status badge */}
-            <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full border border-border bg-bg-elevated px-3 py-1 text-xs text-text-secondary">
-              ✨ Currently Building
-            </div>
           </div>
         </div>
       </div>

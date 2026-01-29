@@ -64,8 +64,8 @@ export function HeroCard() {
         <p className="mt-6 text-text-secondary leading-relaxed">
           {/* {siteConfig.bio} */}I build interactive web apps using{" "}
           <span className="text-white font-mono font-semibold">TypeScript</span>
-          , <span className="text-white font-mono font-semibold">React</span>,{" "}
-          <span className="text-white font-mono font-semibold">Nextjs</span>,
+          , <span className="text-white font-mono font-semibold"> React</span>,{" "}
+          <span className="text-white font-mono font-semibold"> Nextjs</span>,
           and Tailwind CSS. With a focus on UI design. Enthusiastic about
           creating seamless user experiences, driven by a keen eye for design.
         </p>
@@ -110,12 +110,6 @@ export function HeroCard() {
               <Mail className="h-4 w-4" />
               E-Mail
             </a>
-          </Button>
-
-          {/* Theme toggle placeholder - disabled */}
-          <Button variant="outline" disabled className="opacity-50">
-            <Sun className="h-4 w-4" />
-            light/dark
           </Button>
         </div>
       </div>
