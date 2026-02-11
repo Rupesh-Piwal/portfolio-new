@@ -1,9 +1,10 @@
 import Image from "next/image";
-import { MapPin, FileText, Github, Linkedin, Mail, Sun } from "lucide-react";
+import { MapPin, FileText, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AvailabilityBadge } from "./availability-badge";
 import { siteConfig } from "@/lib/constants";
 import { AnimatedTextSlider } from "@/components/animated-text-slider";
+import { OrbitalClock } from "../orbital-clock";
 
 export function HeroCard() {
   return (
@@ -32,11 +33,6 @@ export function HeroCard() {
               {siteConfig.name}
             </h1>
 
-            {/* Role */}
-            {/* <WordRotate
-              words={["Browser Engineer", "Fullstack Engineer", "History Nerd"]}
-            /> */}
-
             <AnimatedTextSlider
               texts={[
                 "Browser Engineer",
@@ -58,6 +54,7 @@ export function HeroCard() {
               />
             </div>
           </div>
+          <OrbitalClock />
         </div>
 
         {/* Bio */}
