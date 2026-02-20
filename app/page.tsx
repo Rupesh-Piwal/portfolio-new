@@ -1,4 +1,3 @@
-
 import { Container } from "@/components/layout/container";
 import { HeroCard } from "@/components/hero/hero-card";
 import { ExperienceList } from "@/components/experience/experience-list";

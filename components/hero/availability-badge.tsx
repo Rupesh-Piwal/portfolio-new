@@ -14,23 +14,23 @@ export function AvailabilityBadge({
   return (
     <div
       className={cn(
-        "inline-flex items-center gap-2 rounded-full border border-border bg-bg-secondary px-3 py-1.5 text-sm",
-        className
+        "inline-flex items-center gap-2 rounded-full border border-border bg-bg-secondary px-2 py-1 text-[10px] font-mono",
+        className,
       )}
     >
       {/* Animated pulse dot */}
-      <span className="relative flex h-2 w-2">
+      <span className="relative flex h-[5px] w-[5px]">
         {available && (
-          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-success opacity-75" />
+          <span className="absolute inline-flex h-[5px] w-[5px] animate-ping rounded-full bg-success opacity-75" />
         )}
         <span
           className={cn(
-            "relative inline-flex h-2 w-2 rounded-full",
-            available ? "bg-success" : "bg-gray-medium"
+            "relative inline-flex h-[5px] w-[5px] rounded-full",
+            available ? "bg-success" : "bg-gray-medium",
           )}
         />
       </span>
-      <span className="text-text-primary">{text}</span>
+      <span className="text-[10px] font-thin font-mono">{text}</span>
     </div>
   );
 }

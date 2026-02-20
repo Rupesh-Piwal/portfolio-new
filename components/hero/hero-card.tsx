@@ -11,50 +11,52 @@ export function HeroCard() {
     <section className="lg:py-8">
       <div className="glass-card glass-card-hover glass-border-glow rounded-2xl lg:p-6 pt-6 sm:p-8">
         {/* Top section: Avatar + Info */}
-        <div className="flex flex-row gap-6 ">
-          {/* Avatar */}
-          <div className="shrink-0">
-            <div className="h-20 w-20 overflow-hidden rounded-xl border border-border">
-              <Image
-                src={siteConfig.avatar}
-                alt={siteConfig.name}
-                width={96}
-                height={96}
-                className="h-full w-full object-cover"
-                priority
-              />
-            </div>
-          </div>
-
-          {/* Info */}
-          <div className="flex flex-col justify-center ">
-            {/* Name */}
-            <h1 className="text-[20px] lg:text-3xl font-bold text-text-primary">
-              {siteConfig.name}
-            </h1>
-
-            <AnimatedTextSlider
-              texts={[
-                "Browser Engineer",
-                "Full-Stack Developer",
-                "Detail Oriented",
-              ]}
-            />
-
-            {/* Location + Availability */}
-            <div className="flex flex-wrap items-center gap-4">
-              <div className="flex items-center gap-1.5 text-text-secondary">
-                <MapPin className="h-3 w-3 lg:h-4 lg:w-4" />
-
-                <span className="text-sm">{siteConfig.location}</span>
+        <div className="flex flex-row justify-between gap-6 ">
+          <div className="flex flex-row justify-between gap-8">
+            {/* Avatar */}
+            <div className="shrink-0">
+              <div className="h-20 w-20 overflow-hidden rounded-xl border border-border">
+                <Image
+                  src={siteConfig.avatar}
+                  alt={siteConfig.name}
+                  width={96}
+                  height={96}
+                  className="h-full w-full object-cover"
+                  priority
+                />
               </div>
-              <AvailabilityBadge
-                available={siteConfig.available}
-                text={siteConfig.availableText}
+            </div>
+
+            {/* Info */}
+            <div className="flex flex-col justify-center ">
+              {/* Name */}
+              <h1 className="text-[20px] lg:text-3xl font-bold text-text-primary">
+                {siteConfig.name}
+              </h1>
+
+              <AnimatedTextSlider
+                texts={[
+                  "Browser Engineer",
+                  "Full-Stack Developer",
+                  "Detail Oriented",
+                ]}
               />
+
+              {/* Location + Availability */}
+              <div className="flex flex-wrap items-center gap-4">
+                <div className="flex items-center gap-1.5 text-text-secondary">
+                  <MapPin className="h-3 w-3 lg:h-4 lg:w-4" />
+
+                  <span className="text-sm font-thin">
+                    {siteConfig.location}
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
-          <OrbitalClock />
+          <div>
+            <OrbitalClock />
+          </div>
         </div>
 
         {/* Bio */}
@@ -62,9 +64,9 @@ export function HeroCard() {
           {/* {siteConfig.bio} */}I build interactive web apps using{" "}
           <span className="text-white font-mono font-semibold">TypeScript</span>
           , <span className="text-white font-mono font-semibold"> React</span>,{" "}
-          <span className="text-white font-mono font-semibold"> Nextjs</span>,
-          and Tailwind CSS. With a focus on UI design. Enthusiastic about
-          creating seamless user experiences, driven by a keen eye for design.
+          <span className="text-white font-mono font-semibold"> Nextjs</span>, .
+          With a focus on UI design. Enthusiastic about creating seamless user
+          experiences, driven by a keen eye for design.
         </p>
 
         {/* CTA Buttons */}
@@ -108,6 +110,10 @@ export function HeroCard() {
               E-Mail
             </a>
           </Button>
+          <AvailabilityBadge
+            available={siteConfig.available}
+            text={siteConfig.availableText}
+          />
         </div>
       </div>
     </section>

@@ -3,6 +3,25 @@ import type { Project } from "@/types";
 export const projects: Project[] = [
   {
     id: "1",
+    name: "Snapcut",
+    description:
+      "Snap-Cut is a lightweight Loom alternative that runs entirely in the browser. Users can record their screen, customize the look, and instantly generate a shareable video link — no desktop app required..",
+    image: "/images/vidvault1.png",
+    techStack: [
+      "Nextjs",
+      "AWS",
+      "TypeScript",
+      "Web Workers",
+      "Canvas API",
+      "PostgreSQL",
+    ],
+    liveUrl: "https://snapcutt.vercel.app/",
+    githubUrl:
+      "https://github.com/Rupesh-Piwal/video-vault/blob/main/README.md",
+    featured: true,
+  },
+  {
+    id: "1",
     name: "VidVault",
     description:
       "Built a reliable system to upload and process videos that handles failures smoothly and provides real-time updates, secure sharing, previews, and instant alerts.",
