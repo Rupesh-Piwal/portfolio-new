@@ -45,7 +45,7 @@ export function HeroCard() {
               {/* Location + Availability */}
               <div className="flex flex-wrap items-center gap-4">
                 <div className="flex items-center gap-1.5 text-text-secondary">
-                  <MapPin className="h-3 w-3 lg:h-4 lg:w-4" />
+                  <MapPin className="h-3 w-3 lg:h-3 lg:w-3" />
 
                   <span className="text-sm font-thin">
                     {siteConfig.location}

@@ -106,7 +106,7 @@ export function OrbitalClock() {
           className="absolute inset-2 rounded-full border backdrop-blur-md"
           style={{
             background:
-              "linear-gradient(145deg, rgba(15,23,42,0.85), rgba(10,15,20,0.95))",
+              "linear-gradient(145deg, rgba(15,23,42,0.45), rgba(10,15,20,0.45))",
             borderColor: "rgba(148,163,184,0.15)",
             boxShadow:
               "inset 0 1px 0 rgba(255,255,255,0.04), 0 20px 40px rgba(0,0,0,0.6)",
