@@ -6,6 +6,7 @@ import { siteConfig } from "@/lib/constants";
 import { AnimatedTextSlider } from "@/components/animated-text-slider";
 import { OrbitalClock } from "../orbital-clock";
 
+
 export function HeroCard() {
   return (
     <section className="lg:py-8">
@@ -78,7 +79,7 @@ export function HeroCard() {
               rel="noopener noreferrer"
             >
               <FileText className="h-4 w-4" />
-              Resume
+              <span className="hidden md:flex">Resume</span>
             </a>
           </Button>
 
@@ -89,7 +90,7 @@ export function HeroCard() {
               rel="noopener noreferrer"
             >
               <Github className="h-4 w-4" />
-              Github
+              <span className="hidden md:flex">Github</span>
             </a>
           </Button>
 
@@ -100,14 +101,14 @@ export function HeroCard() {
               rel="noopener noreferrer"
             >
               <Linkedin className="h-4 w-4" />
-              LinkedIn
+              <span className="hidden md:flex">LinkedIn</span>
             </a>
           </Button>
 
           <Button asChild>
             <a href={siteConfig.socials.find((s) => s.name === "Email")?.url}>
               <Mail className="h-4 w-4" />
-              E-Mail
+              <span className="hidden md:flex"> E-Mail</span>
             </a>
           </Button>
           <AvailabilityBadge

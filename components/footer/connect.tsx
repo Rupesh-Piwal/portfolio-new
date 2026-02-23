@@ -29,7 +29,7 @@ export function Connect() {
                   rel="noopener noreferrer"
                 >
                   <Twitter className="h-4 w-4" />
-                  Twitter
+                  <span className="hidden md:flex">Twitter</span>
                 </a>
               </Button>
 
@@ -42,7 +42,8 @@ export function Connect() {
                   rel="noopener noreferrer"
                 >
                   <Github className="h-4 w-4" />
-                  GitHub
+
+                  <span className="hidden md:flex">GitHub</span>
                 </a>
               </Button>
 
@@ -53,7 +54,7 @@ export function Connect() {
                   rel="noopener noreferrer"
                 >
                   <FileText className="h-4 w-4" />
-                  Resume
+                  <span className="hidden md:flex">Resume</span>
                 </a>
               </Button>
 
@@ -66,7 +67,7 @@ export function Connect() {
                   rel="noopener noreferrer"
                 >
                   <Linkedin className="h-4 w-4" />
-                  LinkedIn
+                  <span className="hidden md:flex">LinkedIn</span>
                 </a>
               </Button>
             </div>
