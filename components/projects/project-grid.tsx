@@ -4,7 +4,7 @@ import { projects } from "@/data/projects";
 export function ProjectGrid() {
   return (
     <section id="projects" className="py-8">
-      <h2 className="mb-6 font-[family-name:var(--font-serif)] text-xs md:text-xl tracking-tight text-gray-300">
+      <h2 className="mb-6 text-[16px] md:text-xl tracking-tight text-gray-300">
         Personal Projects
       </h2>
       {/* Projects list - stacked vertically like the reference */}

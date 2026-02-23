@@ -16,8 +16,7 @@ export const projects: Project[] = [
       "PostgreSQL",
     ],
     liveUrl: "https://snapcutt.vercel.app/",
-    githubUrl:
-      "https://github.com/Rupesh-Piwal/video-vault/blob/main/README.md",
+    githubUrl: "https://github.com/Rupesh-Piwal/snapcut/blob/main/README.md",
     featured: true,
   },
   {
@@ -56,7 +55,7 @@ export const projects: Project[] = [
     name: "Ichofy",
     description:
       "Built a fast and scalable web app for 1000+ users with real-time chat, smooth state management, and an analytics dashboard that helps make better decisions.",
-    image: "/images/ichofy1.png",
+    image: "/images/projects/ichofy1.png",
     techStack: ["Reactjs", "Zustand", "MongoDB", "Node.js", "Cloudinary"],
     liveUrl: "https://ichofy.onrender.com/",
     githubUrl: "https://github.com/Rupesh-Piwal/Ichofy/blob/main/Readme.md",
@@ -67,7 +66,7 @@ export const projects: Project[] = [
     name: "Talent Hire",
     description:
       "Built a scalable job board app with secure login, fast pages, and reliable data handling, contributing extensively to its development.",
-    image: "/images/talenthire1.png",
+    image: "/images/projects/talenthire1.png",
     techStack: ["Nextjs", "TypeScript", "PostgreSQL", "Node.js"],
     liveUrl: "https://talent-hire-xi.vercel.app/",
     githubUrl: "https://github.com/Rupesh-Piwal/TalentHire",

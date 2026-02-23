@@ -6,11 +6,10 @@ import { siteConfig } from "@/lib/constants";
 import { AnimatedTextSlider } from "@/components/animated-text-slider";
 import { OrbitalClock } from "../orbital-clock";
 
-
 export function HeroCard() {
   return (
     <section className="lg:py-8">
-      <div className="glass-card glass-card-hover glass-border-glow rounded-2xl lg:p-6 pt-6 sm:p-8">
+      <div className="glass-card glass-card-hover glass-border-glow rounded-2xl p-6 pt-6  mt-6">
         {/* Top section: Avatar + Info */}
         <div className="flex flex-row justify-between gap-6 ">
           <div className="flex flex-row justify-between gap-8">
@@ -31,7 +30,7 @@ export function HeroCard() {
             {/* Info */}
             <div className="flex flex-col justify-center ">
               {/* Name */}
-              <h1 className="text-[20px] lg:text-3xl font-bold text-text-primary">
+              <h1 className="text-[24px] lg:text-3xl font-bold text-text-primary">
                 {siteConfig.name}
               </h1>
 
@@ -55,7 +54,7 @@ export function HeroCard() {
               </div>
             </div>
           </div>
-          <div>
+          <div className="hidden md:flex">
             <OrbitalClock />
           </div>
         </div>
@@ -65,7 +64,7 @@ export function HeroCard() {
           {/* {siteConfig.bio} */}I build interactive web apps using{" "}
           <span className="text-white font-mono font-semibold">TypeScript</span>
           , <span className="text-white font-mono font-semibold"> React</span>,{" "}
-          <span className="text-white font-mono font-semibold"> Nextjs</span>, .
+          <span className="text-white font-mono font-semibold"> Nextjs</span>.
           With a focus on UI design. Enthusiastic about creating seamless user
           experiences, driven by a keen eye for design.
         </p>

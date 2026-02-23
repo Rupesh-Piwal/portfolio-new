@@ -21,27 +21,29 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
           <AccordionTrigger className="py-0 hover:no-underline">
             <div className="flex items-center gap-4">
               {/* Company Logo */}
-              <div className="flex h-12 w-12 items-center justify-center rounded-lg border border-border bg-bg-primary overflow-hidden">
+              <div className="flex h-8 w-8 md:h-12 md:w-12 items-center justify-center rounded-lg border border-border bg-bg-primary overflow-hidden">
                 <Image
                   src={experience.logo}
                   alt={experience.company}
                   width={32}
                   height={32}
-                  className="h-8 w-8 object-contain"
+                  className="h-6 w-6 md:h-8 md:w-8 object-contain"
                 />
               </div>
 
               {/* Info */}
               <div className="text-left">
-                <h3 className="font-semibold text-text-primary">
+                <h3 className="font-semibold text-white text-[12px] md:text-text-primary">
                   {experience.company}
                 </h3>
-                <p className="text-sm text-text-secondary">{experience.role}</p>
+                <p className="text-[12px] md:text-sm text-text-secondary">
+                  {experience.role}
+                </p>
               </div>
             </div>
 
             {/* Duration */}
-            <span className="mr-2 text-sm text-text-muted">
+            <span className="mr-2 text-[10px] md:text-sm text-text-muted">
               {experience.duration}
             </span>
           </AccordionTrigger>

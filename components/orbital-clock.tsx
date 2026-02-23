@@ -88,7 +88,7 @@ export function OrbitalClock() {
       {/* Clock container */}
       <div
         ref={clockRef}
-        className="relative w-24 h-24 transition-transform duration-300 ease-out"
+        className="relative w-13 h-13 md:w-24 md:h-24 transition-transform duration-300 ease-out"
       >
         {/* Outer glow (subtle, portfolio style) */}
         <div
@@ -193,7 +193,7 @@ export function OrbitalClock() {
 
       {/* Date reveal */}
       <div
-        className="absolute right-[90px] font-mono text-[11px] tracking-[0.3em] uppercase transition-all duration-500"
+        className="hidden md:flex absolute right-[90px] font-mono text-[11px] tracking-[0.3em] uppercase transition-all duration-500"
         style={{
           transform: `translateX(-50%) translateY(${isHovered ? 0 : -10}px)`,
           opacity: isHovered ? 1 : 0,

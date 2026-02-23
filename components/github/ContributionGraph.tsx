@@ -6,9 +6,9 @@ const ContributionGraph = () => {
     <div className="sm:px-12 px-0 mt-4">
       <div className="flex flex-row items-center mb-4 px-4 gap-2 ">
         <Github />
-        <h2 className="font-[family-name:var(--font-serif)] text-xs md:text-xl tracking-tight text-gray-300 font-thin">
+        <h2 className="text-[14px] md:text-xl tracking-tight text-gray-300 font-thin">
           GitHub Contributions <span className="">● </span>
-          <a className="text-slate-700" href="https://github.com/Rupesh-Piwal">
+          <a className="text-slate-800" href="https://github.com/Rupesh-Piwal">
             @rupeshPiwal
           </a>
         </h2>
