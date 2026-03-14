@@ -54,12 +54,24 @@ export function HeroCard() {
         </div>
 
         <p className="mt-6 text-text-secondary leading-relaxed">
-          I build interactive web apps using{" "}
+          I build and ship production-ready web apps using{" "}
           <span className="text-white font-mono font-semibold">TypeScript</span>
-          , <span className="text-white font-mono font-semibold"> React</span>,{" "}
-          <span className="text-white font-mono font-semibold"> Nextjs</span>.
-          With a focus on UI design. Enthusiastic about creating seamless user
-          experiences, driven by a keen eye for design.
+          , <span className="text-white font-mono font-semibold">React</span>,
+          and{" "}
+          <span className="text-white font-mono font-semibold">Next.js</span>.
+          My work often involves designing{" "}
+          <span className="text-white font-mono font-semibold">
+            authentication systems
+          </span>
+          , handling large{" "}
+          <span className="text-white font-mono font-semibold">
+            file uploads
+          </span>{" "}
+          , building reliable APIs, and crafting responsive{" "}
+          <span className="text-white font-mono font-semibold">
+            user interfaces
+          </span>{" "}
+          .
         </p>
 
         <div className="mt-6 flex flex-wrap items-center gap-3">
