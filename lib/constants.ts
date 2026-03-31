@@ -10,7 +10,7 @@ export const siteConfig: SiteConfig = {
   available: true,
   availableText: "Available for Work",
   resumeUrl:
-    "https://drive.google.com/file/d/1CiBBU1CeezzilOlXwdZ4AN04H-NmhHP0/view?usp=sharing",
+    "https://drive.google.com/file/d/1ZNywPyUWB2fMEo-wvZgDLZqF7Iii15cO/view?usp=sharing",
   socials: [
     {
       name: "GitHub",
