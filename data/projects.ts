@@ -3,6 +3,24 @@ import type { Project } from "@/types";
 export const projects: Project[] = [
   {
     id: "1",
+    name: "NomadGo",
+    description:
+      "NomadGo is a full-stack travel orchestration platform that transforms simple destination ideas into high-fidelity, print-ready editorial itineraries.",
+    image: "/images/projects/nomadgo-portfolio.png",
+    techStack: [
+      "Nextjs",
+      "Reactjs",
+      "TypeScript",
+      "Redis",
+      "BullMQ",
+      "Cloudflare R2",
+    ],
+    liveUrl: "https://nomadgoo.vercel.app",
+    githubUrl: "https://github.com/Rupesh-Piwal/nomadgo",
+    featured: true,
+  },
+  {
+    id: "2",
     name: "Snapcut",
     description:
       "Snap-Cut is a lightweight Loom alternative that runs entirely in the browser. Users can record their screen, customize the look, and instantly generate a shareable video link — no desktop app required..",
@@ -20,7 +38,7 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: "2",
+    id: "3",
     name: "VidVault",
     description:
       "Built a reliable system to upload and process videos that handles failures smoothly and provides real-time updates, secure sharing, previews, and instant alerts.",
@@ -40,7 +58,7 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: "3",
+    id: "4",
     name: "Finsync",
     description:
       "Built a finance app that tracks spending in real time, scans receipts automatically, sends smart alerts and reports, and stays secure and reliable at scale.",
@@ -51,7 +69,7 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: "4",
+    id: "5",
     name: "Ichofy",
     description:
       "Built a fast and scalable web app for 1000+ users with real-time chat, smooth state management, and an analytics dashboard that helps make better decisions.",
@@ -62,7 +80,7 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: "5",
+    id: "6",
     name: "Talent Hire",
     description:
       "Built a scalable job board app with secure login, fast pages, and reliable data handling, contributing extensively to its development.",
