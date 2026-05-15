@@ -6,7 +6,7 @@ export const projects: Project[] = [
     name: "NomadGo",
     description:
       "NomadGo is a full-stack travel orchestration platform that transforms simple destination ideas into high-fidelity, print-ready editorial itineraries.",
-    image: "/images/projects/nomadgo-portfolio.png",
+    image: "/images/projects/nomadgooo.png",
     techStack: [
       "Nextjs",
       "Reactjs",
