@@ -13,6 +13,7 @@ export const projects: Project[] = [
       "TypeScript",
       "Redis",
       "BullMQ",
+      "PostgreSQL",
       "Cloudflare R2",
     ],
     liveUrl: "https://nomadgoo.vercel.app",

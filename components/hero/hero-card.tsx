@@ -54,25 +54,33 @@ export function HeroCard() {
         </div>
 
         <p className="mt-6 text-text-secondary leading-relaxed">
-          I build and ship production-ready web apps using{" "}
-          <span className="text-white font-mono font-semibold">TypeScript</span>
-          , <span className="text-white font-mono font-semibold">React</span>,
-          and{" "}
-          <span className="text-white font-mono font-semibold">Next.js</span>.
-          My work often involves designing{" "}
-          <span className="text-white font-mono font-semibold">
-            authentication systems
-          </span>
-          , handling large{" "}
-          <span className="text-white font-mono font-semibold">
-            file uploads
-          </span>{" "}
-          , building reliable APIs, and crafting responsive{" "}
-          <span className="text-white font-mono font-semibold">
-            user interfaces
-          </span>{" "}
-          .
-        </p>
+  I enjoy turning ideas into working products using{" "}
+  <span className="text-white font-mono font-semibold">
+    TypeScript
+  </span>
+  , <span className="text-white font-mono font-semibold">React</span>,
+  and{" "}
+  <span className="text-white font-mono font-semibold">
+    Next.js
+  </span>
+  . My work often involves building{" "}
+  <span className="text-white font-mono font-semibold">
+    authentication systems
+  </span>
+  , handling{" "}
+  <span className="text-white font-mono font-semibold">
+    AI workflows
+  </span>
+  , generating{" "}
+  <span className="text-white font-mono font-semibold">
+    PDFs
+  </span>
+  , building reliable APIs, and crafting responsive{" "}
+  <span className="text-white font-mono font-semibold">
+    user interfaces
+  </span>
+  .
+</p>
 
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <Button asChild>
