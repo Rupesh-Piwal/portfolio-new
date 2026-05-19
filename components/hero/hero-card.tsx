@@ -71,11 +71,11 @@ export function HeroCard() {
   <span className="text-white font-mono font-semibold">
     AI workflows
   </span>
-  , generating{" "}
+  , creating{" "}
   <span className="text-white font-mono font-semibold">
-    PDFs
+    scalable APIs
   </span>
-  , building reliable APIs, and crafting responsive{" "}
+  , and crafting responsive{" "}
   <span className="text-white font-mono font-semibold">
     user interfaces
   </span>
